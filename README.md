@@ -17,29 +17,69 @@ At the final layer, a $1\times1$ convolution is used to map each 32-component fe
 The cost function is the multiclass cross-entropy function (CE).
 
 <p align="center">
-<img src="images/ce.png" width=450> 
+  <figure>
+    <img src="images/ce.png" width="450" alt="Descriptive Alt Text">
+    <figcaption>
+      <strong>Figure Title:</strong> This is the caption describing the figure.
+    </figcaption>
+  </figure>
 </p>
 
 The test results are shown below:
 
 **Forest**:
-<p align="center">
-<img src="result/Forest.png" width="500"> 
-</p>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; gap: 20px; text-align: center;">
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/CHM_TSNN_test512_3D.png" width="150" alt="Figure (a)">
+    <figcaption style="margin-top: 10px; display: block;">(a)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/CHM_TSNN_test512_3D.png" width="150" alt="Figure (b)">
+    <figcaption style="margin-top: 10px; display: block;">(b)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/CHM_TSNN_test512_3D.png" width="150" alt="Figure (c)">
+    <figcaption style="margin-top: 10px; display: block;">(c)</figcaption>
+  </figure>
+</div>
 
-<p align="center">
-<img src="result/Forest_line_1.png" width="250"> <img src="result/Forest_line_170.png" width="250">  <img src="result/Forest_line_280.png" width="250">
-</p>
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); justify-content: center; gap: 20px; text-align: center;">
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/CHM_jointd_unet.png" width="150" alt="Figure (a)">
+    <figcaption style="margin-top: 10px; display: block;">(a)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/CHM_jointd_fcn.png" width="150" alt="Figure (b)">
+    <figcaption style="margin-top: 10px; display: block;">(b)</figcaption>
+  </figure>
+</div>
 
 **Ground**:
-<p align="center">
-<img src="result/Ground.png" width="500"> 
-</p>
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; gap: 20px; text-align: center;">
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/DTM_TSNN_test512_3D.png" width="150" alt="Figure (a)">
+    <figcaption style="margin-top: 10px; display: block;">(a)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/DTM_TSNN_test512_3D.png" width="150" alt="Figure (b)">
+    <figcaption style="margin-top: 10px; display: block;">(b)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/DTM_TSNN_test512_3D.png" width="150" alt="Figure (c)">
+    <figcaption style="margin-top: 10px; display: block;">(c)</figcaption>
+  </figure>
+</div>
 
-<p align="center">
-<img src="result/Ground_line_100.png" width="250"> <img src="result/Ground_line_150.png" width="250">  <img src="result/Ground_line_280.png" width="250">
-</p>
- 
+<div style="display: grid; grid-template-columns: repeat(2, 1fr); justify-content: center; gap: 20px; text-align: center;">
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/DTM_jointd_unet.png" width="150" alt="Figure (a)">
+    <figcaption style="margin-top: 10px; display: block;">(a)</figcaption>
+  </figure>
+  <figure style="margin: 0; text-align: center;">
+    <img src="images/DTM_jointd_fcn.png" width="150" alt="Figure (b)">
+    <figcaption style="margin-top: 10px; display: block;">(b)</figcaption>
+  </figure>
+</div>
 
 # Team members
  Wenyu Yang (wenyu.yang001@studenti.uniparthenope.it); \
