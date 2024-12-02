@@ -6,11 +6,13 @@ If you find this information helpful and choose to incorporate it into your rese
 
 
 CATSNET is based on the U-Net structure proposed in [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597). 
+
 <p align="center">
   <figure>
-    <img src="images/flatUnet.png" width="450">
+    <img src="images/ce.png" width="450">
   </figure>
 </p>
+
 It consists of a contracting encoder path (left side) and an expansive decoder path (right side). The number of the input image tile channels is $M$. 
 The contracting part is composed of five downsampling levels: each level is composed of two $3 \times 3$ convolutional layers, followed by a [Rectified Linear Unit (ReLU)](https://proceedings.neurips.cc/paper/2012/hash/c399862d3b9d6b76c8436e924a68c45b-Abstract.html) and a $2 \times 2$ max pooling operation with stride 2 for downsampling (except for the last level). After each downsampling step, the number of feature channels is doubled. On the contrary, the expansive part is composed of five upsampling levels. As for the encoder part, each level consists of two $3 \times 3$ convolutional layers followed by ReLU and a $2 \times 2$ upsampling operation. On the contrary, in the encoder part, at each level, the number of feature maps is halved and concatenated with the corresponding feature map from the contracting path.
 At the final layer, a $1\times1$ convolution is used to map each 32-component feature vector to the desired number of classes, which is the number of the forest height or ground height classes. As we can see from Fig. \ref{Unetarchi}, there are $23$ convolutional layers.
