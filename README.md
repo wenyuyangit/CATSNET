@@ -7,7 +7,7 @@ If you find this information helpful and choose to incorporate it into your rese
 
 CATSNET is based on the U-Net structure proposed in [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597). 
 <p align="center">
- <img src="results/flatUnet.png" width="800">
+ <img src="images/flatUnet.png" width="800">
 </p>
 
 It consists of a contracting encoder path (left side) and an expansive decoder path (right side). The number of the input image tile channels is $M$. 
@@ -18,7 +18,7 @@ The cost function is the multiclass cross-entropy function (CE).
 
 <p align="center">
   <figure>
-    <img src="results/ce.png" width="450" alt="Descriptive Alt Text">
+    <img src="images/ce.png" width="450" alt="Descriptive Alt Text">
     <figcaption>
       <strong>Figure Title:</strong> This is the caption describing the figure.
     </figcaption>
