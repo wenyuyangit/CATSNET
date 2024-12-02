@@ -7,7 +7,7 @@ If you find this information helpful and choose to incorporate it into your rese
 
 CATSNET is based on the U-Net structure proposed in [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597). 
 <p align="center">
- <img src="images/flatUnet.png" width="800">
+ <img src="results/flatUnet.png" width="800">
 </p>
 
 It consists of a contracting encoder path (left side) and an expansive decoder path (right side). The number of the input image tile channels is $M$. 
@@ -18,7 +18,7 @@ The cost function is the multiclass cross-entropy function (CE).
 
 <p align="center">
   <figure>
-    <img src="images/ce.png" width="450" alt="Descriptive Alt Text">
+    <img src="results/ce.png" width="450" alt="Descriptive Alt Text">
     <figcaption>
       <strong>Figure Title:</strong> This is the caption describing the figure.
     </figcaption>
@@ -30,26 +30,26 @@ The test results are shown below:
 **Forest**:
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; gap: 20px; text-align: center;">
   <figure style="margin: 0; text-align: center;">
-    <img src="images/CHM_TSNN_test512_3D.png" width="150" alt="Figure (a)">
+    <img src="results/CHM_TSNN_test512_3D.png" width="150" alt="Figure (a)">
     <figcaption style="margin-top: 10px; display: block;">(a)</figcaption>
   </figure>
   <figure style="margin: 0; text-align: center;">
-    <img src="images/CHM_TSNN_test512_3D.png" width="150" alt="Figure (b)">
+    <img src="results/CHM_TSNN_test512_3D.png" width="150" alt="Figure (b)">
     <figcaption style="margin-top: 10px; display: block;">(b)</figcaption>
   </figure>
   <figure style="margin: 0; text-align: center;">
-    <img src="images/CHM_TSNN_test512_3D.png" width="150" alt="Figure (c)">
+    <img src="results/CHM_TSNN_test512_3D.png" width="150" alt="Figure (c)">
     <figcaption style="margin-top: 10px; display: block;">(c)</figcaption>
   </figure>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); justify-content: center; gap: 20px; text-align: center;">
   <figure style="margin: 0; text-align: center;">
-    <img src="images/CHM_jointd_unet.png" width="150" alt="Figure (a)">
+    <img src="results/CHM_jointd_unet.png" width="150" alt="Figure (a)">
     <figcaption style="margin-top: 10px; display: block;">(a)</figcaption>
   </figure>
   <figure style="margin: 0; text-align: center;">
-    <img src="images/CHM_jointd_fcn.png" width="150" alt="Figure (b)">
+    <img src="results/CHM_jointd_fcn.png" width="150" alt="Figure (b)">
     <figcaption style="margin-top: 10px; display: block;">(b)</figcaption>
   </figure>
 </div>
@@ -57,26 +57,26 @@ The test results are shown below:
 **Ground**:
 <div style="display: grid; grid-template-columns: repeat(3, 1fr); justify-content: center; gap: 20px; text-align: center;">
   <figure style="margin: 0; text-align: center;">
-    <img src="images/DTM_TSNN_test512_3D.png" width="150" alt="Figure (a)">
+    <img src="results/DTM_TSNN_test512_3D.png" width="150" alt="Figure (a)">
     <figcaption style="margin-top: 10px; display: block;">(a)</figcaption>
   </figure>
   <figure style="margin: 0; text-align: center;">
-    <img src="images/DTM_TSNN_test512_3D.png" width="150" alt="Figure (b)">
+    <img src="results/DTM_TSNN_test512_3D.png" width="150" alt="Figure (b)">
     <figcaption style="margin-top: 10px; display: block;">(b)</figcaption>
   </figure>
   <figure style="margin: 0; text-align: center;">
-    <img src="images/DTM_TSNN_test512_3D.png" width="150" alt="Figure (c)">
+    <img src="results/DTM_TSNN_test512_3D.png" width="150" alt="Figure (c)">
     <figcaption style="margin-top: 10px; display: block;">(c)</figcaption>
   </figure>
 </div>
 
 <div style="display: grid; grid-template-columns: repeat(2, 1fr); justify-content: center; gap: 20px; text-align: center;">
   <figure style="margin: 0; text-align: center;">
-    <img src="images/DTM_jointd_unet.png" width="150" alt="Figure (a)">
+    <img src="results/DTM_jointd_unet.png" width="150" alt="Figure (a)">
     <figcaption style="margin-top: 10px; display: block;">(a)</figcaption>
   </figure>
   <figure style="margin: 0; text-align: center;">
-    <img src="images/DTM_jointd_fcn.png" width="150" alt="Figure (b)">
+    <img src="results/DTM_jointd_fcn.png" width="150" alt="Figure (b)">
     <figcaption style="margin-top: 10px; display: block;">(b)</figcaption>
   </figure>
 </div>
