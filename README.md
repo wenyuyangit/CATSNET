@@ -100,20 +100,19 @@ terms of the license, as specified in the document LICENSE.txt
 (included in this directory)
 
 # Usage 
-* **data** folder contains two patches: patch1 is for the forest height prediction and patch2 is for the ground height prediction (corresponding to the examples of the paper);
-  patch1:
-     * *CHM_patch1_x_nc.npy* : the input samples without phase calibration
-     * *CHM_patch1_y_step1.npy*: the forest height reference with quantized step, 1m
+* **data** folder contains calibrated SAR testing patch and uncalibrated SAR testing patch (same testing area);
+  Input data:
+     * *radar_nc.npy* : the input samples without phase calibration
+     * *test_CHM_1.npy*: the forest height reference with quantized step, 1m
   patch2:
-     * *DTM_patch2_x_nc.npy* : the input samples without phase calibration
-     * *DTM_patch2_y_step1.npy*: the ground height reference with quantized step, 1m
+     * *radar_c.npy* : the input samples without phase calibration
+     * *test_DTM_1.npy*: the ground height reference with quantized step, 1m
 
-* *CHM_9layer_400_0.0001_nc_para.pth* contains trained weights of the forest height prediction
-* *DTM_9layer_400_0.0001_nc_para.pth* contains trained weights of the ground height prediction
-* *TSNN_cov_models_CHM.py* contains the model implementation of the forest height prediction
-* *TSNN_cov_models_DTM.py* contains the model implementation of the ground height prediction
-* *TSNN_cov_result_CHM.py* is the main script for testing to predict the forest heights
-* *TSNN_cov_result_DTM.py* is the main script for testing to predict the ground heights
+* *CHM_Weights.pth* contains trained weights of the forest height prediction
+* *DTM_Weights.pth* contains trained weights of the ground height prediction
+* *main.py* contains the model implementation of the forest and/or ground height prediction
+* *Evaluation.py* is the main script for testing to predict the forest and/or ground heights
+* *unet.py* is the U-Net network structure construction
 
 # Prerequisites
 This code is written on the Ubuntu system for Python 3.7 and uses the Pytorch library.
@@ -131,24 +130,24 @@ and follow the instructions for installation
 
 **Installing the conda environment**
 
-The file ./TSNNenv.yml contains the environment for testing the code. You can easily install it by command line:
+The file ./CATSNETenv.yml contains the environment for testing the code. You can easily install it by command line:
 
 1. move to the folder containing the GitHub repository and open the terminal
 2. run the following command
- > conda env create -f TSNNenv.yml
+ > conda env create -f CATSNETenv.yml
 
 
 Once the environment has been set up, activate it by command line as well:
 
 1. activate the environment from the command line
 
-> conda activate TSNNenv
+> conda activate CATSNETenv
 
 2. Launch Spyder
 
 > spyder
 
-3. goes to the folder containing **TSNN_cov_result_CHM.py** or **TSNN_cov_result_DTM.py**, edit, and run
+3. goes to the folder containing **Evaluation.py** edit, and run
 
 **Showing results**
 
