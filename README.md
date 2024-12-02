@@ -9,7 +9,7 @@ CATSNET is based on the U-Net structure proposed in [U-Net: Convolutional Networ
 
 <p align="center">
   <figure>
-    <img src="images/ce.png" width="450">
+    <img src="images/flatUnet.png" width="450">
   </figure>
 </p>
 
