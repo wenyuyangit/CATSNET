@@ -151,7 +151,7 @@ Once the environment has been set up, activate it by command line as well:
 
 **Showing results**
 
-1. The test results in **result** folder are obtained in Matlab R2023a
+1. The test results in **results** folder are obtained in Matlab R2023a
 
 **TropiSAR Data**
 
