@@ -8,7 +8,7 @@ If you find this information helpful and choose to incorporate it into your rese
 CATSNET is based on the U-Net structure proposed in [U-Net: Convolutional Networks for Biomedical Image Segmentation](https://arxiv.org/abs/1505.04597). 
 <p align="center">
   <figure>
-    <img src="images/flatUnet.png" width="450" alt="Descriptive Alt Text">
+    <img src="images/flatUnet.png" width="450">
   </figure>
 </p>
 It consists of a contracting encoder path (left side) and an expansive decoder path (right side). The number of the input image tile channels is $M$. 
