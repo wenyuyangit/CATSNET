@@ -1,4 +1,4 @@
-name: CATSNET_env
+name: CATSNETenv
 channels:
   - anaconda
   - intel
