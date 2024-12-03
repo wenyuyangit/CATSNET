@@ -1,4 +1,4 @@
-name: ywy_env
+name: CATSNET_env
 channels:
   - anaconda
   - intel
